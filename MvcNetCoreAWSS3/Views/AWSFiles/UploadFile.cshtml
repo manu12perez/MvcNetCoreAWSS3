@@ -1,0 +1,22 @@
+﻿<div class="container mt-5">
+    <div class="card shadow p-4">
+        <h1 class="text-danger mb-4">📤 Upload File to AWS</h1>
+
+        <a asp-controller="AWSFiles"
+           asp-action="Index"
+           class="btn btn-outline-secondary mb-3">
+            🔙 Back to Index
+        </a>
+
+        <form method="post" enctype="multipart/form-data">
+            <div class="mb-3">
+                <label for="file" class="form-label fw-semibold">Seleccione un fichero</label>
+                <input type="file" name="file" id="file" class="form-control" />
+            </div>
+
+            <button type="submit" class="btn btn-primary">
+                🚀 Upload File
+            </button>
+        </form>
+    </div>
+</div>
